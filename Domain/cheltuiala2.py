@@ -9,20 +9,14 @@ def create_cheltuiala(id, nr_apartament, suma, data, tipul):
      :param tipul:
      :return noua cheltuila:
     '''
-    return {
-        'id': id,
-        'nr_apartament': nr_apartament,
-        'suma': suma,
-        'data': data.strftime("%d/%m/%Y"),
-        'tipul': tipul,
-    }
+    return [id, nr_apartament, suma, data, tipul]
 
 def get_id(cheltuiala):
     '''
     :param cheltuiala:
     :return:
     '''
-    return cheltuiala [ 'id' ]
+    return cheltuiala[0]
 
 def get_nr_apartament(cheltuiala):
     '''
@@ -30,7 +24,7 @@ def get_nr_apartament(cheltuiala):
     :param cheltuiala:
     :return:
     '''
-    return cheltuiala [ 'nr_apartament' ]
+    return cheltuiala[1]
 
 def get_suma(cheltuiala):
     '''
@@ -38,7 +32,7 @@ def get_suma(cheltuiala):
     :param cheltuiala:
     :return:
     '''
-    return cheltuiala [ 'suma' ]
+    return cheltuiala[2]
 
 def get_data(cheltuiala):
     '''
@@ -46,30 +40,15 @@ def get_data(cheltuiala):
     :param cheltuiala:
     :return:
     '''
-    return datetime.strptime(cheltuiala [ 'data' ], '%d/%m/%Y')
+    return datetime.strptime(cheltuiala[3], '%d/%m/%Y')
 
 def get_tipul(cheltuiala):
     '''
     :param cheltuiala:
     :return:
     '''
-    return cheltuiala [ 'tipul' ]
+    return cheltuiala[4]
 
-def set_tipul(cheltuiala, tipul):
-    '''
-        :param cheltuiala:
-        :param tipul_intretinere:
-        :return:
-    '''
-    cheltuiala['tipul'] = tipul
-
-def set_suma(cheltuiala, suma):
-    '''
-    :param cheltuiala:
-    :param suma:
-    :return:
-    '''
-    cheltuiala['suma'] = suma
 
 def to_str(cheltuiala):
     '''

@@ -1,0 +1,1 @@
+[{"id": 10, "nr_apartament": 1, "suma": 1, "data": "10/12/2004", "tipul": 1}, {"id": 5, "nr_apartament": 2, "suma": 12, "data": "11/11/2020", "tipul": 2}]

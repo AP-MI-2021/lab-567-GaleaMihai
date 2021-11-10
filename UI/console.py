@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from Domain.cheltuiala2 import to_str, create_cheltuiala, get_nr_apartament, get_tipul, get_data, get_suma
+from Domain.cheltuiala import to_str, create_cheltuiala, get_nr_apartament, get_tipul, get_data, get_suma
 from Logic.crud import add_cheltuiala, delete_cheltuiala, get_by_id, update_cheltuiala
 from Logic.file_ops import write_file
 from Logic.operatiuni import stergere_cheltuieli, adaugare_valoare_pt_o_data, cheltuiala_mare, ordonare_descrescator, \

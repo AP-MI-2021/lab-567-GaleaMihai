@@ -138,8 +138,8 @@ def run_crud(cheltuieli, undo_list,redo_list):
     return cheltuieli
 
 
-def run_operatiuni(cheltuieli,undo_list,redo_list):
-    def handle_stergere_cheltuieli(cheltuieli,undo_list,redo_list):
+def run_operatiuni(cheltuieli, undo_list, redo_list):
+    def handle_stergere_cheltuieli(cheltuieli, undo_list, redo_list):
        try:
             ap = int(input('Apartamentul cerut:'))
             new_list = copy.deepcopy(cheltuieli)
@@ -152,7 +152,7 @@ def run_operatiuni(cheltuieli,undo_list,redo_list):
             print('Eroare:', ve, ',reincearca!')
             return cheltuieli
 
-    def handle_cheltuieli_data(cheltuieli, undo_list,redo_list):
+    def handle_cheltuieli_data(cheltuieli, undo_list, redo_list):
         try:
             data = datetime.strptime(input('Dati data de cautare (ZZ/LL/AAAA):'), "%d/%m/%Y")
             valoarea = float(input('Dati valoarea de adaugat:'))
@@ -215,11 +215,13 @@ def run_redo(redo_list):
     if len(redo_list) > 0:
         return redo_list.pop()
 
+
 def undo(cheltuieli, undo_list):
     undone = run_undo(undo_list)
     if undone is not None:
         cheltuieli = undone
     return cheltuieli
+
 
 def redo(cheltuieli, redo_list):
     undone = run_redo(redo_list)

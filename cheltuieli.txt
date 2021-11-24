@@ -1,1 +1,1 @@
-[{"id": 10, "nr_apartament": 1, "suma": 1, "data": "10/12/2004", "tipul": 1}, {"id": 5, "nr_apartament": 2, "suma": 12, "data": "11/11/2020", "tipul": 2}]
+[{"id": 10, "nr_apartament": 1, "suma": 1, "data": "10/12/2004", "tipul": 1}, {"id": 5, "nr_apartament": 2, "suma": 12, "data": "11/11/2020", "tipul": 2}, {"id": 1, "nr_apartament": 5, "suma": 143.0, "data": "23/05/2021", "tipul": 2}, {"id": 3, "nr_apartament": 76, "suma": 83.0, "data": "19/09/2021", "tipul": 0}, {"id": 2, "nr_apartament": 96, "suma": 105.0, "data": "11/07/2021", "tipul": 2}]
